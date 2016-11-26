@@ -20,7 +20,8 @@ Or build :
 
 # Supported tags
 
-* [![](https://images.microbadger.com/badges/version/zeiot/rpi-node_exporter.svg)](http://microbadger.com/images/zeiot/rpi-node_exporter "Get your own version badge on microbadger.com")
+* [![](https://images.microbadger.com/badges/version/zeiot/rpi-node_exporter:0.13.0.svg)](https://microbadger.com/images/zeiot/rpi-node_exporter:0.13.0 "Get your own version badge on microbadger.com")
+* [![](https://images.microbadger.com/badges/version/zeiot/rpi-node_exporter:0.12.0.svg)](https://microbadger.com/images/zeiot/rpi-node_exporter:0.12.0 "Get your own version badge on microbadger.com")
 
 
 ## License
