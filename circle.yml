@@ -13,7 +13,7 @@ dependencies:
   override:
     - docker info
     # - docker run --rm --privileged multiarch/qemu-user-static:register --reset
-    - docker build -t zeiot/node_exporter:1.0 1.0
+    - docker build -t zeiot/node_exporter:1.0 -f 1.0/Dockerfile.Build
 
 test:
   override:
@@ -24,4 +24,4 @@ test:
 #    branch: master
 #    commands:
 #      - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
-#      - docker push portefaix/elasticsearch
+#      - docker push zeiot/rpi-node_exporter
