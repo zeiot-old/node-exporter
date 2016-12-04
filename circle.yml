@@ -13,7 +13,7 @@ dependencies:
   override:
     - docker info
     # - docker run --rm --privileged multiarch/qemu-user-static:register --reset
-    - docker build -t zeiot/node_exporter:1.0 -f Dockerfile.Build 1.0
+    - docker build -t zeiot/node_exporter:1.0 -f 1.0/Dockerfile.Build 1.0
 
 test:
   override:
