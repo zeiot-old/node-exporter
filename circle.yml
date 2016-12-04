@@ -17,7 +17,7 @@ dependencies:
 
 test:
   override:
-    - docker run zeiot/node_exporter:1.1 node_exporter-1.0 ; sleep 10 ; docker stop node_exporter-1.0
+    - docker run zeiot/node_exporter:1.0 node_exporter-1.0 ; sleep 10 ; docker stop node_exporter-1.0
 
 #deployment:
 #  hub:
