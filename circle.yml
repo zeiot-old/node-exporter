@@ -12,7 +12,7 @@ dependencies:
     - "~/docker"
   override:
     - docker info
-    - docker run --rm --privileged multiarch/qemu-user-static:register --reset
+    # - docker run --rm --privileged multiarch/qemu-user-static:register --reset
     - docker build -t zeiot/node_exporter:1.0 1.0
 
 test:
