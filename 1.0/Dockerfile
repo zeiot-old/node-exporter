@@ -2,7 +2,7 @@
 # AUTHOR:         Nicolas Lamirault <nicolas.lamirault@gmail.com>
 # DESCRIPTION:    zeiot/rpi-prometheus
 
-FROM resin/armv7hf-debian:jessie
+FROM resin/armv7hf-debian:stretch
 MAINTAINER Nicolas Lamirault <nicolas.lamirault@gmail.com>
 
 ENV NODE_EXPORTER_VERSION 0.14.0
