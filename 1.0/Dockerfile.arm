@@ -1,0 +1,37 @@
+# Copyright (C) 2016-2018 Nicolas Lamirault <nicolas.lamirault@gmail.com>
+
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# VERSION 0.16.0
+# AUTHOR:         Nicolas Lamirault <nicolas.lamirault@gmail.com>
+# DESCRIPTION:    zeiot/rpi-prometheus
+
+FROM resin/armv7hf-debian:stretch
+MAINTAINER Nicolas Lamirault <nicolas.lamirault@gmail.com>
+
+ENV NODE_EXPORTER_VERSION 0.16.0
+
+ADD https://github.com/prometheus/node_exporter/releases/download/v${NODE_EXPORTER_VERSION}/node_exporter-${NODE_EXPORTER_VERSION}.linux-armv7.tar.gz /node_exporter.tar.gz
+
+RUN [ "cross-build-start" ]
+
+RUN tar -xf /node_exporter.tar.gz && \
+    rm /node_exporter.tar.gz && \
+    mv node_exporter-${NODE_EXPORTER_VERSION}.linux-armv7/node_exporter /usr/bin/node_exporter && \
+    rm -fr node_exporter-${NODE_EXPORTER_VERSION}.linux-armv7
+
+RUN [ "cross-build-end" ]
+
+EXPOSE     9100
+
+ENTRYPOINT [ "/usr/bin/node_exporter" ]
