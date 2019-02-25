@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# VERSION 0.16.0
+# VERSION 0.17.0
 # AUTHOR:         Nicolas Lamirault <nicolas.lamirault@gmail.com>
 # DESCRIPTION:    zeiot/rpi-prometheus
 
@@ -24,7 +24,7 @@ LABEL summary="Prometheus node exporter for ARM" \
       url="https://github.com/zeiot/rpi-node_exporter" \
       maintainer="Nicolas Lamirault <nicolas.lamirault@gmail.com>"
 
-ENV NODE_EXPORTER_VERSION 0.16.0
+ENV NODE_EXPORTER_VERSION 0.17.0
 
 ADD https://github.com/prometheus/node_exporter/releases/download/v${NODE_EXPORTER_VERSION}/node_exporter-${NODE_EXPORTER_VERSION}.linux-armv7.tar.gz /node_exporter.tar.gz
 
