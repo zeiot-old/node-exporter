@@ -1,5 +1,9 @@
-RPI Prometheus node exporter ChangeLog
+Prometheus node exporter ChangeLog
 =================================
+
+# Version 0.3.0 (02/25/2019)
+
+- Update to 0.17.0
 
 # Version 0.2.0 (09/21/2017)
 
