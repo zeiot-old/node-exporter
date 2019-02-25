@@ -1,4 +1,4 @@
-# Copyright (C) 2016-2018 Nicolas Lamirault <nicolas.lamirault@gmail.com>
+# Copyright (C) 2016-2019 Nicolas Lamirault <nicolas.lamirault@gmail.com>
 
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
 
 # VERSION 0.17.0
 # AUTHOR:         Nicolas Lamirault <nicolas.lamirault@gmail.com>
-# DESCRIPTION:    zeiot/rpi-prometheus
+# DESCRIPTION:    zeiot/prometheus
 
 FROM balenalib/armv7hf-alpine:3.9
 # FROM balenalib/armv7hf-debian:stretch
@@ -22,8 +22,8 @@ FROM balenalib/armv7hf-alpine:3.9
 
 LABEL summary="Prometheus node exporter for ARM" \
       description="Prometheus node exporter for ARM devices" \
-      name="zeiot/rpi-node_exporter" \
-      url="https://github.com/zeiot/rpi-node_exporter" \
+      name="zeiot/node_exporter" \
+      url="https://github.com/zeiot/node_exporter" \
       maintainer="Nicolas Lamirault <nicolas.lamirault@gmail.com>"
 
 ENV NODE_EXPORTER_VERSION 0.17.0
