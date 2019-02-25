@@ -16,7 +16,9 @@
 # AUTHOR:         Nicolas Lamirault <nicolas.lamirault@gmail.com>
 # DESCRIPTION:    zeiot/rpi-prometheus
 
-FROM resin/aarch64-debian:stretch
+FROM balenalib/aarch64-alpine:3.9
+# FROM balenalib/aarch64-debian:stretch
+# FROM resin/aarch64-debian:stretch
 
 LABEL summary="Prometheus node exporter for ARM" \
       description="Prometheus node exporter for ARM devices" \
